@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "BuurtCampusArial-Bold";
+  src: url("Fonts/BuurtCampusArial-Bold.ttf");
+  font-weight: bold;
+}
+
 /* Zet de container in het midden  */
 main {
   display: flex;
@@ -6,11 +12,15 @@ main {
   padding-bottom: 2rem;
 }
 
+h1 a {
+  font-family: "BuurtCampusArial-Bold";
+  text-transform: uppercase;
+  font-size: var(--font-size-xxl);
+  color: var(--color3);
+}
+
 /* Zet de nieuws header op de goede plek voor elke grid-layout */
 h2 {
-  font-size: 1.5rem;
-  color: var(--color3);
-
   @media (min-width: 678px) {
     grid-area: 1 / 1 / 2 / 3;
   }
