@@ -91,7 +91,6 @@ h2 {
 
 .news-article {
   max-width: 64ch;
-  /* color: ; */
 }
 
 .article-img {
@@ -100,4 +99,39 @@ h2 {
 
 figure {
   margin: 0;
+}
+
+.hbd-blockquotes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hbd-blockquote-primary {
+  background-color: var(--color5);
+  color: var(--color6);
+
+  text-align: center;
+
+  border-radius: 2rem;
+  padding: 2rem;
+  max-width: 285px;
+  font-style: italic;
+}
+
+.hbd-blockquote-secondary {
+  background-color: rgb(249 193 157);
+  text-align: center;
+  padding: 2rem;
+  max-width: 285px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hbd-blockquote-name {
+  display: grid;
+  place-content: center;
+  font-style: normal;
 }
