@@ -88,3 +88,16 @@ h2 {
 .contact-form {
   width: 750px;
 }
+
+.news-article {
+  max-width: 64ch;
+  /* color: ; */
+}
+
+.article-img {
+  max-width: 500px;
+}
+
+figure {
+  margin: 0;
+}
