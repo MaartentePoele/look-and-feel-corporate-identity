@@ -135,3 +135,8 @@ figure {
   place-content: center;
   font-style: normal;
 }
+
+.blockquoteLL {
+  max-width: 300px;
+  margin: auto;
+}
