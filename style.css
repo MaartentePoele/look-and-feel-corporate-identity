@@ -4,8 +4,20 @@
   font-weight: bold;
 }
 
+* {
+  scrollbar-gutter: stable;
+}
+
 body {
   margin: 0;
+}
+
+.header-zuidoost,
+.header-oost,
+.header-nieuw-west {
+  a {
+    color: var(--color6);
+  }
 }
 
 header {
