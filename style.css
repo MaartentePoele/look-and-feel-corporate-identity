@@ -4,6 +4,7 @@
   font-weight: bold;
 }
 
+/* Ruimte voor scrollbar op alle pagina's */
 * {
   scrollbar-gutter: stable;
 }
@@ -12,14 +13,7 @@ body {
   margin: 0;
 }
 
-.header-zuidoost,
-.header-oost,
-.header-nieuw-west {
-  a {
-    color: var(--color6);
-  }
-}
-
+/* HEADER */
 header {
   display: grid;
   place-items: center;
@@ -89,8 +83,17 @@ li {
   }
 }
 
+/* Underline voor buurtpagina waar je op zit */
 .active {
   text-decoration: underline;
+}
+
+.header-zuidoost,
+.header-oost,
+.header-nieuw-west {
+  a {
+    color: var(--color6);
+  }
 }
 
 /* Zet de container in het midden  */
@@ -110,10 +113,6 @@ h2 {
   @media (min-width: 1100px) {
     grid-area: 1 / 1 / 2 / 4;
   }
-}
-
-h4 {
-  margin: 0;
 }
 
 .article-container {
@@ -171,18 +170,42 @@ h4 {
   text-decoration-color: var(--color3);
 }
 
-.news-article {
-  max-width: 64ch;
+footer {
+  background-color: var(--color1);
 }
 
-.article-img {
-  max-width: 500px;
+/* FORMULIER */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1vw, 5rem, 8vw);
+  padding: 1rem;
 }
 
-figure {
-  margin: 0;
+.form-section-1 {
+  max-width: 250px;
+
+  @media (min-width: 690px) {
+    margin-top: 1rem;
+  }
+
+  h4 {
+    margin: 0;
+  }
 }
 
+.form-section-2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 350px;
+
+  p {
+    margin: 0.5rem 0rem;
+  }
+}
+
+/* BLOCKQUOTES */
 .hbd-blockquotes {
   display: flex;
   justify-content: center;
@@ -223,32 +246,15 @@ figure {
   margin: auto;
 }
 
-footer {
-  background-color: var(--color1);
+/* Voor detailpagina's */
+.news-article {
+  max-width: 64ch;
 }
 
-.contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(1vw, 5rem, 8vw);
-  padding: 1rem;
+.article-img {
+  max-width: 500px;
 }
 
-.form-section-1 {
-  max-width: 250px;
-
-  @media (min-width: 690px) {
-    margin-top: 1rem;
-  }
-}
-
-.form-section-2 {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  max-width: 350px;
-
-  p {
-    margin: 0.5rem 0rem;
-  }
+figure {
+  margin: 0;
 }
