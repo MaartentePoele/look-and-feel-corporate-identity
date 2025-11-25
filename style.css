@@ -82,7 +82,15 @@ li {
     @media (min-width: 1024px) {
       font-size: var(--font-size-l);
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
+}
+
+.active {
+  text-decoration: underline;
 }
 
 /* Zet de container in het midden  */
