@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BuurtCampusArial-Bold";
-  src: url("Fonts/BuurtCampusArial-Bold.ttf");
+  src: url("fonts/BuurtCampusArial-Bold.ttf");
   font-weight: bold;
 }
 
@@ -44,7 +44,7 @@ nav {
 h1 {
   margin: 0;
   a {
-    font-family: "BuurtCampusArial-Bold";
+    font-family: "BuurtCampusArial-Bold", Arial;
     text-transform: uppercase;
     color: var(--color3);
     font-size: var(--font-size-l); /*was xxl*/
