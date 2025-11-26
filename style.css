@@ -4,11 +4,6 @@
   font-weight: bold;
 }
 
-/* Ruimte voor scrollbar op alle pagina's */
-* {
-  scrollbar-gutter: stable;
-}
-
 body {
   margin: 0;
 }
